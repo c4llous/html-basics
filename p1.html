@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+</head>
+<body>
+    <div class="first">
+        <p>A web document (or web page) is,a set of HTML tags that are written in a plain text editor (without format) and run in a web browser.</p>
+        
+        
+        <h2 class="header1">The basic HTML skeleton</h2>
+        <h3 class="header1"><em>How to create a Web Page</em></h3>
+        <p>To create a true HTML document you will start with three container elements:</p>
+        <ul>
+        <li>&lt;html&gt;</li>
+        <li>&lt;head&gt;</li>
+        <li>&lt;body&gt;</li>
+        </ul>
+        <p>These three combine to describe the basic structure of the page:</p>
+        <ul>
+        <li><strong>&lt;html&gt;</strong>: This element wraps all the content of the page (except the DTD)</li>
+        <li><strong>&lt;head&gt;</strong>: This element designates the header part of the document. You can include optional information about the Web page, such as the title (the browser shows it in the title bar), optional search keywords and an optional style sheet</li>
+        <li><strong>&lt;body&gt;</strong>: This element contains the content of your Web page, that is, what we want to appear in the navigation area of the browser</li>
+        </ul>
+        <p>There is only one correct way to combine these three elements. Here is its exact placement, with the doctype at the top of the page:</p>
+        <pre><span class="new">&lt;!DOCTYPE  html&gt;</span><br /><span class="tag">&lt;html&gt;</span><br />	<span class="tag">&lt;head&gt;</span><br />  	...<br />	<span class="tag">&lt;/head&gt;</span><br />	<span class="tag">&lt;body&gt;</span><br />		...<br />	<span class="tag">&lt;/body&gt;</span><br /><span class="tag">&lt;/html&gt;</span>
+                                                  </pre>
+        <p>Every Web page uses this basic structure. The ellipses (...) show where you would insert the additional information.</p>
+        <p>Once the XHTML skeleton is placed, you must add two more connectors to the mix</p>
+        <p>Every Web page requires a &lt;title&gt; element in the header section. Next, you must create a container for the text in the text body section (&lt;body&gt;). </p>
+        <p>A multi-use text container element is <p>, which represents a paragraph. Let's take a closer look at the elements that need to be added:</p>
+        <ul>
+        <li><strong>&lt;title&gt;</strong>: Sets the title of the Web page, which has several functions. First, browsers display it in the upper part of the window. Second, when a visitor creates a bookmark for the page, the browser uses the title to tag it in the bookmarks (or bookmarks) menu. third, when the page appears in a web search, the search engine usually shows this title as the first line in the results, followed by a fragment of the content of the page.</li>
+        <li><strong>&lt;p&gt;</strong>: Indicates a paragraph. The browsers do not bleed them but they add a small space between several consecutive ones to keep them separated</li>
+        </ul>
+        <p>Here is the page with these two new ingredients:</p>
+        <pre><span class="new">&lt;!DOCTYPE  html&gt;</span><br /><span class="tag">&lt;html&gt;</span><br />	<span class="tag">&lt;head&gt;</span><br />		<span class="tag">&lt;title&gt;</span><span class="texto">Welcome to my website</span><span class="tag">&lt;/title&gt;</span><br />	<span class="tag">&lt;/head&gt;</span><br />	<span class="tag">&lt;body&gt;</span><br />		<span class="tag">&lt;p&gt;&lt;/p&gt;</span><br />	<span class="tag">&lt;/body&gt;</span><br />
+                                                <span class="tag">&lt;/html&gt;</span>
+                                                            </pre>
+        <p>If you open this document in a Web browser, you will see that the page is empty, but now the title appears.</p>
+        
+        <p>When a browser displays a Web page, the title appears at the top of the window, with the text at the end. If yours uses tabbed browsing, the title also appears in them.</p>
+        <p>As it is now, this HTML document is a good template for future pages. The basic structure is in place; you simply need to change the title and add some text.</p>
+        <p>The first thing we have to know is that in every web page there are two clearly differentiated parts: the head, or head, and the body, or body.</p>
+        <p>Let's do is create a folder, inside "My Documents", to store the test files that we will use.</p>
+        <p>We will call this folder html-tests in the rest of the exercises. With the folder open, double-click on the icon that represents the notebook.</p>
+        <p>A blank document will open.</p>
+        <h2>Enter the following text:</h2>
+        <pre><span class="new">&lt;!DOCTYPE  html&gt;</span><br /><span class="tag">&lt;html&gt;</span><br />	<span class="tag">&lt;head&gt;</span><br />		<span class="tag">&lt;title&gt;</span><span class="texto"><p>Welecome to my webpage</p></span><span class="tag">&lt;/title&gt;</span><br />	<span class="tag">&lt;/head&gt;</span><br />	<span class="tag">&lt;body&gt;</span><br />	&lt;<span class="tag">/body&gt;</span><br /><span class="tag">&lt;/html&gt;</span>
+                                                            </pre>
+        <p>When you have it written, save it in the folder with the name template.html</p>
+        <p>It is vital that the extension be .html, since only by the extension does the operating system recognize this file as a web document, and not as a simple and text file.</p>
+        <p>The name of the file should be written as it is, in lowercase and without spaces or special characters.</p>
+        <p>The only punctuation marks allowed are the point (only one), which we will use to separate the name of the extension and the underscore.</p>
+        <p>The name may contain letters and numbers, but must begin with a letter. Likewise, we will abstain from putting in the name of a file accented letters, eñes, cedillas, or any other character of a local alphabet.</p>
+        <p>Only the characters of the international alphabet (English) are allowed.</p>
+        <h2>Observe the following examples:</h2>
+        <ul>
+        <li>page 1.htm is <strong>incorrect</strong>, as it has a blank space and a capital letter</li>
+        <li>page/1.htm is <strong>incorrect</strong>, it has a non-allowed character (the bar)</li>
+        <li>page1-htm is <strong>incorrect</strong>, because the extension is not separated from the name by a period and because it uses a non-allowed character. (the normal script).</li>
+        <li>page.1.htm is <strong>incorrect</strong>, because there is more than one point. Only one should be used, to separate the name of the extension</li>
+        <li>page1.htm is <strong>correct</strong></li>
+        <li>page_1.html is <strong>correct</strong></li>
+        <li>page-1.html is <strong>correct</strong> </li>
+        </ul>
+        <p>All of these precautions may seem excessive to you now. Most of them are really unnecessary in Windows, but do not forget that you are working on the Net.</p>
+        <p>Web servers are much more sensitive to certain aspects of the name of the files than your local machine.</p>
+        <p>Another important rule is that the files have an extension, but the folders in which we store them do not. So, in the name of a folder we will never include points.</p>
+        <p>Once you have saved your code in your folder with the appropriate name, close the notebook. In your folder, in addition to the notebook, you will see the icon that represents the file you just recorded.</p>
+        <p>Note that the icon is reminiscent of Explorer or Google Chrome (assuming one of them is your default browser).</p>
+        <p>This is because having saved the file with the .htm extension, the operating system recognizes this file as a web document (also called an html document).</p>
+        <p>If you incorrectly record the extension, the icon will be different and you will not be able to use your file as a web document.</p>
+        <p>To execute the page you just created, double-click on the icon. Automatically, the browser will open and the page will be loaded. The full path and the name of the file will appear in the address bar.</p>
+        <p>Now let's see in detail what is the code of this page that we have created and what it does.</p>
+        <p>First, we found the tag &lt;html&gt;. This tag is always used to start the html code.</p>
+        <p>It is the way to tell the browser that at this point the code starts. For this reason, this line is always put as the first line of the code.</p>
+        <p>We will not include any tag before this, with the exception of DOCTYPE. On the contrary, at the end of the code we have the tag &lt;/html&gt;, which tells the browser that the code ends at that point.</p>
+        <p>We should not include any tag or anything else after this line. Note that the ending tag is the same as the start tag, but including the slash at the beginning.</p>
+        <p>Inside the html code we will find clearly differentiated the two blocks that we mentioned before: the head (header) and the body (body of the page).</p>
+        <h2>Let's see the code of the header:</h2>
+        <pre><span class="tag">&lt;head&gt;</span><br />	<span class="tag">&lt;title&gt;</span><br />		<span class="texto">T&iacute;tulo de la p&aacute;gina</span><br />	<span class="tag">&lt;/title&gt;</span><br /><span class="tag">&lt;/head&gt;</span>
+                                                  </pre>
+        <p>Like the general code, the header has a beginning indicated by &lt;head&gt; and an end indicated by &lt;/head&gt;.</p>
+        <p>Everything we want to include in the header will be placed between these two lines.</p>
+        
+        <p>As we said before, in the header we will include some general configuration data of the page. In this template we have only included the title of the page.</p>
+        <p>The title of the page is included between the tags &lt;title&gt; and &lt;/title&gt;, which indicate, respectively, the beginning and end of the title.</p>
+        <p>The title is a literal (a string of text) that will appear in the browser's title bar at runtime (when the page is executed), as shown in the following figure:</p>
+        
+        <p>I want to emphasize that this title is only that: a free text to appear on the page and has nothing to do with the name we gave the file.</p>
+        <p>Once the head is completed, we go to the second section of the entire web page: body or body.</p>
+        <p>The body includes, as I mentioned before, everything you want to see in the navigation area.</p>
+        <p>It starts with the tag &lt;body&gt; and ends with the tag &lt;/body&gt;. As we see in the file that we have created, at the moment we have not included anything</p>
+        <p>For this reason, when you run the page, you see the empty navigation area. Inside the body we will enter code and we will visualize the results.</p>
+        <p>The first thing we will do is include text on the page so that it is displayed in the navigation area.</p>
+        <p>To do this, close the browser and, within the folder in which you are working, drag the icon of template.html on the notebook. In this way, the notebook will open and load the source code you had previously typed.</p>
+        <p>In the area of the code reserved for body of the page between the lines &lt;body&gt; and &lt;/body&gt;, type the following:</p>
+        <p><strong>This is a line of text.</strong></p>
+        <p>Therefore, your code will be as follows:</p>
+        <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;&lt;
+	head&gt;
+		&lt;title&gt;
+			<p>ANything Here</p>
+		&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		<p>THis is body of html</p>
+	&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+<p>Then click on the FILE menu and, within this, choose the option SAVE AS ... make sure you save it in your folder.</p>
+<p>As a file name, type text-simple.html. Once saved, close the notebook and run the file by double clicking on its icon.</p>
+<p>The result on the screen will be like the one shown:</p>
+
+<p>How do you see to display a text in the navigation area, simply include that text within the body of the page.</p>
+<p>In the next article we will learn many things about the text: its presentation, its color, etc.</p>
+<div class="clear"></div>
+</div>
+    
+</body>
+</html>
